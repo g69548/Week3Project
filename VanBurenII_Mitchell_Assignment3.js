@@ -74,6 +74,8 @@ var height = function (lowerIt) {
     }
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
+        
+        return;
     }
     
 
@@ -91,6 +93,9 @@ var name = function (first, last) {
     var fullName = first + last;
     console.log("Client: My name is " + fullName);
     console.log("Client : I just wanted to say thank you for your services!")
+    
+    return;
+   
 }
 
 name ("Johnny ", "Rocket")
@@ -122,6 +127,9 @@ var allPayment = total
     console.log("Mechanic: Thank you for your bussiness! Come Back again sometime!");
     console.log("Mechanic: WOOOWOOOOWOO easy throwing those heavy bills, thats all i need!")
     console.log("Client: Your welcome! Thank you for the great hospitality and.....");
+    
+    return;
+   
     
 }
 cost(500);
