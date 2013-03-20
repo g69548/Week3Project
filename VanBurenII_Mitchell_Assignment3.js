@@ -38,6 +38,8 @@ console.log("Mechanic"+ ": So lets think anout this, we have 2 brands we sale.")
 
 
 
+
+
 var coilchoice = function (Brand) {
     
     var coil = Brand;
@@ -46,7 +48,7 @@ var coilchoice = function (Brand) {
     
     console.log ("Mechanic" + ": Yes! " + Brand + " Would be the perfect choice because of the drop!");
     
-    return;
+    return choice;
 
     }  
 
@@ -75,7 +77,7 @@ var height = function (lowerIt) {
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
         
-        return;
+        return finalHeight;
     }
     
 
@@ -94,7 +96,7 @@ var name = function (first, last) {
     console.log("Client: My name is " + fullName);
     console.log("Client : I just wanted to say thank you for your services!")
     
-    return;
+    return FulName;
    
 }
 
@@ -128,7 +130,7 @@ var allPayment = total
     console.log("Mechanic: WOOOWOOOOWOO easy throwing those heavy bills, thats all i need!")
     console.log("Client: Your welcome! Thank you for the great hospitality and.....");
     
-    return;
+    return completeCost;
    
     
 }
