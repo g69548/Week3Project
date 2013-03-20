@@ -2,7 +2,7 @@
 
 /*
  * Mitchell VanBurenII
- * SDI Assignment 2
+ * SDI Assignment 3
  * 1303
  *
  * This code will be just a more indepth and none static way to lower your car with
@@ -48,7 +48,7 @@ var coilchoice = function (Brand) {
     
     console.log ("Mechanic" + ": Yes! " + Brand + " Would be the perfect choice because of the drop!");
     
-    return choice;
+    return;
 
     }  
 
@@ -72,13 +72,19 @@ var height = function (lowerIt) {
         
        if (remaining > 0.5) {
        console.log("Mechanic"+ ": " + remaining + " Remaining!");
-       console.log("Mechanic"+ ": Lower!");
+       
     }
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
         
-        return finalHeight;
+        
     }
+    while(remaining > 0.5) {
+         console.log("Mechanic: Lower!");
+        }
+    
+        return;
+    
     
 
     
@@ -120,11 +126,28 @@ var cost = function (total)  {
 
 var allPayment = total
 
+var additionalOption = false;
+
 
     
     for (i = 0; i< total; i +=50 ){
         console.log(total - i + " Remaining!");
-        }
+    }
+    if(total == 0){
+      console.log("Okay heres you reciept, anything else?")
+      
+      
+      if(additionalOption == false){
+         console.log("well alrighty then!")
+      
+      }
+   else{
+        console.log("well we need to pay the rest of this off") 
+      }
+    }
+   else{
+      console.log("welp i guess we are all good here!")
+   }//Nested conditional
 
     console.log("Mechanic: Thank you for your bussiness! Come Back again sometime!");
     console.log("Mechanic: WOOOWOOOOWOO easy throwing those heavy bills, thats all i need!")
