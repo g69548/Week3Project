@@ -41,7 +41,13 @@ var client = {
    
   client.lowestHeight(0.5);  
    
+   var sign = "Mitchell's Auto Repair!";
+   var repeat = 0;
    
+   while (repeat < 1){
+    console.log(sign);
+    repeat ++;
+   }
 
 
 
@@ -107,7 +113,7 @@ var Racelands = 3.0;
 console.log("Mechanic"+ ": Now we will drop this in increments just to be safe.");
 
 var height = function (lowerIt) {
-    var now = lowerIt;
+    
     
     for (stock = 3.5; stock > lowerIt; stock -= 0.5) {
         var remaining = stock - lowerIt;
@@ -117,7 +123,7 @@ var height = function (lowerIt) {
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
       }
-      return now;
+      return;
     }
 }
 height (0.5)
