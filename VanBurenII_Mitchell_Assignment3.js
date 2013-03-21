@@ -19,10 +19,27 @@ var brand2 = "FK";
 
 //****Object****
 
+var client = {
 
+   "name"       : "Johnny",
+   "age"        : 27,
+   "car"        : "VW Golf",
+   "options"    : ["Racelands", "FK's"],
+   "height"     : 1.0,
+   "helpWanted" : true,
+   "reason"     : "Coil Over Install",
+   "working"    : function (){
+      var project = this.car;
    
+      return project;
+},
+
+   "lowestHeight" : function(newlow) {
+     this.height = newlow; 
+   }
+   }
    
-   
+  client.lowestHeight(0.5);  
    
    
 
@@ -35,14 +52,23 @@ console.log("Mechanic" + ": Ok,Ok, i see that you are wanting to lower this. Let
  
  if(stockheight > 1.5){
  
+   
+ 
     console.log("Mechanic" + ": We need to drop this a good bit" );
     console.log("Mechanic" + ": You are sitting at about " + stockheight + " " + measurement);
     
  }
  else{
     console.log(mechanic + ": Haha you dont need me, your just fine. Anything else i can do for ya!?");
-    }
     
+    }
+   
+    
+
+
+
+
+
 //****Boolean Function****
 
 console.log("Mechanic"+ ": So lets think anout this, we have 2 brands we sale.");
@@ -52,19 +78,22 @@ console.log("Mechanic"+ ": So lets think anout this, we have 2 brands we sale.")
 
 
 var coilchoice = function (Brand) {
-    
+    var choice = true;
     var coil = Brand;
     var choice = true;
     if (choice == true ) {
     
     console.log ("Mechanic" + ": Yes! " + Brand + " Would be the perfect choice because of the drop!");
+    }
+    else{
+      console.log("you need to pick something else!");
+    }
     
-    
-   
+   return choice ;
 
     }  
 
-}
+
 
 coilchoice ("RaceLands");
 
@@ -78,6 +107,7 @@ var Racelands = 3.0;
 console.log("Mechanic"+ ": Now we will drop this in increments just to be safe.");
 
 var height = function (lowerIt) {
+    var now = lowerIt;
     
     for (stock = 3.5; stock > lowerIt; stock -= 0.5) {
         var remaining = stock - lowerIt;
@@ -86,7 +116,8 @@ var height = function (lowerIt) {
     }
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
-         }    
+      }
+      return now;
     }
 }
 height (0.5)
@@ -102,7 +133,7 @@ var nameofClient = function (first, last) {
     console.log("Client : I just wanted to say thank you for your services!")
     
     
-   
+   return fullName;
 }
 
 
@@ -135,19 +166,19 @@ var additionalOption = false;
         console.log(total - i + " Remaining!");
     }
     if(total == 0){
-      console.log("Okay heres you reciept, anything else?")
+      console.log("Mechanic : Okay heres you reciept, anything else?")
       
       
       if(additionalOption == false){
-         console.log("well alrighty then!")
+         console.log("Mechanic : well alrighty then!")
       
       }
    else{
-        console.log("well we need to pay the rest of this off") 
+        console.log("Mechanic : well we need to pay the rest of this off") 
       }
     }
    else{
-      console.log("welp i guess we are all good here!")
+      console.log("Mechanic : welp i guess we are all good here!")
    }//Nested conditional
 
     console.log("Mechanic: Thank you for your bussiness! Come Back again sometime!");
