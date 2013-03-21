@@ -17,6 +17,17 @@ var brand1 = "Racelands";
 var brand2 = "FK";
 
 
+//****Object****
+
+
+   
+   
+   
+   
+   
+
+
+
 
 //****Procedure****
 console.log("Mechanic" + ": Hey, good to see you today! My name is" + mechanic + ",how may i help you out!?");
@@ -48,7 +59,8 @@ var coilchoice = function (Brand) {
     
     console.log ("Mechanic" + ": Yes! " + Brand + " Would be the perfect choice because of the drop!");
     
-    return;
+    
+   
 
     }  
 
@@ -69,26 +81,13 @@ var height = function (lowerIt) {
     
     for (stock = 3.5; stock > lowerIt; stock -= 0.5) {
         var remaining = stock - lowerIt;
-        
        if (remaining > 0.5) {
        console.log("Mechanic"+ ": " + remaining + " Remaining!");
-       
     }
     else{
         console.log("Mechanic" + ": We Are THERE! CONGRATS!");
-        
-        
+         }    
     }
-    while(remaining > 0.5) {
-         console.log("Mechanic: Lower!");
-        }
-    
-        return;
-    
-    
-
-    
-}
 }
 height (0.5)
 
@@ -97,16 +96,18 @@ console.log("Mechanic"+ ": Ok we are through! Lets go sign some paper work!");
 console.log("Mechanic"+ ": Could you tell me your name please?");
 
 
-var name = function (first, last) {
+var nameofClient = function (first, last) {
     var fullName = first + last;
     console.log("Client: My name is " + fullName);
     console.log("Client : I just wanted to say thank you for your services!")
     
-    return FulName;
+    
    
 }
 
-name ("Johnny ", "Rocket")
+
+
+nameofClient ("Johnny ", "Rocket");
 
 
 
@@ -124,7 +125,7 @@ console.log("Client: Just cashed my check! Ill pay cash!");
 
 var cost = function (total)  {
 
-var allPayment = total
+
 
 var additionalOption = false;
 
@@ -153,7 +154,7 @@ var additionalOption = false;
     console.log("Mechanic: WOOOWOOOOWOO easy throwing those heavy bills, thats all i need!")
     console.log("Client: Your welcome! Thank you for the great hospitality and.....");
     
-    return completeCost;
+   
    
     
 }
